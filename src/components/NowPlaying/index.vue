@@ -35,7 +35,7 @@
 
 <script>
 
-//import BScroll from 'better-scroll';
+// import BScroll from 'better-scroll';
 
 export default {
     name : 'NowPlaying',
@@ -56,6 +56,7 @@ export default {
             if( msg === 'ok' ){
                 this.movieList = res.data.data.movieList;
                 this.isLoading = false;
+                
                 this.prevCityId = cityId;
                 /* this.$nextTick(()=>{
                     var scroll = new BScroll( this.$refs.movie_body , {
@@ -89,7 +90,7 @@ export default {
                         }
                     });
 
-                }); */
+                  }); */
                 
             }
         });
